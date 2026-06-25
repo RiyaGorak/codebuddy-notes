@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBuddy Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <h2>CodeBuddy</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-book"></i>
+                    Notes
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                    Favorites
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    Recent
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search notes...">
+            </div>
+
+            <button id="themeToggle">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <!-- Welcome -->
+        <section class="welcome-card">
+
+            <div>
+                <h1>Welcome to CodeBuddy Notes 🚀</h1>
+
+                <p>
+                    Generate structured programming notes instantly.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-grid">
+
+            <div class="card">
+                <h3>Total Notes</h3>
+                <h2 id="totalNotes">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Favorites</h3>
+                <h2 id="favoriteCount">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Recent Topics</h3>
+                <h2 id="recentCount">0</h2>
+            </div>
+
+        </section>
+
+        <!-- Generator -->
+        <section class="generator">
+
+            <h2>Generate Notes</h2>
+
+            <div class="form-grid">
+
+                <select id="language">
+
+                    <option value="">
+                        Select Language
+                    </option>
+
+                    <option>
+                        Java
+                    </option>
+
+                    <option>
+                        Python
+                    </option>
+
+                    <option>
+                        C++
+                    </option>
+
+                </select>
+
+                <input
+                    type="text"
+                    id="topic"
+                    placeholder="Enter Topic">
+
+                <button id="generateBtn">
+                    Generate Notes
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Generated Notes -->
+        <section>
+
+            <div id="notesContainer">
+
+            </div>
+
+        </section>
+
+        <!-- Favorites -->
+        <section class="favorites-section">
+
+            <h2>
+                ⭐ Favorite Notes
+            </h2>
+
+            <div id="favoritesContainer">
+
+            </div>
+
+        </section>
+
+        <!-- Recent -->
+        <section class="recent-section">
+
+            <h2>
+                📚 Recent Notes
+            </h2>
+
+            <div id="recentContainer">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
